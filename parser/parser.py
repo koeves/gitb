@@ -7,7 +7,8 @@ class Parser(ABC):
         pass
 
     class ParserError(Exception):
-        pass
+        def __init__(self, msg) -> None:
+            print(f"{msg}")
 
     def __init__(self) -> None:
         pass

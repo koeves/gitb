@@ -4,8 +4,9 @@ import subprocess
 
 class GitBranchParser(Parser):
 
-    class GitBranchParser(Parser.ParserError):
-        pass
+    class GitBranchParserError(Parser.ParserError):
+        def __init__(self, msg) -> None:
+            super().__init__(msg)
 
     def __init__(self) -> None:
         self._list = self._parse()
@@ -14,8 +15,7 @@ class GitBranchParser(Parser):
         branch_call = subprocess.run(["git", "branch"], text=True, capture_output=True)
 
         if "".join(branch_call.stderr.split()) != "":
-            print(f"stderr: {branch_call.stderr}")
-            raise GitBranchParser.GitBranchParser
+            raise GitBranchParser.GitBranchParserError(branch_call.stderr)
 
         branch_list = branch_call.stdout.split('\n')
         branch_list_nonempty = [x for x in branch_list if len(x) > 0]

@@ -17,4 +17,4 @@ if __name__ == "__main__":
         runner.run()
 
     except Parser.ParserError:
-        print("got it")
+        pass
