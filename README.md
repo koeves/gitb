@@ -1,0 +1,2 @@
+# gitb
+Interactive Git utility
