@@ -1,7 +1,7 @@
 # gitb
 Quickly change git branches with arrows
 
-<img src="gitb/demo.gif" width="450" />
+<img src="gitb/demo.gif" width="350" />
 
 ## Installation
 1. Clone the repo
