@@ -10,7 +10,7 @@ Quickly change git branches with arrows
 
 2. Install requirements
 
-`cd gitb/gitb`
+`cd gitb/gitb`   
 `pip3 install -r requirements.txt`
 
 3. Add alias to your ZSH profile
