@@ -15,7 +15,7 @@ Quickly change git branches with arrows
 
 3. Add alias to your ZSH profile
 
-`echo "alias gitb='python3 /Users/danielkoves/Documents/projects/gitb/gitb/main.py'" > ~/.zshrc`   
+`echo "alias gitb='python3 /Users/danielkoves/Documents/projects/gitb/gitb/main.py'" >> ~/.zshrc`   
 `source ~/.zshrc`
 
 4. Invoke `gitb` from your terminal
